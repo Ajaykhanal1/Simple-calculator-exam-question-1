@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h2>Simple Calculator</h2>
+    <form id="calcForm">
+        <label for="">Enter First Number: </label><br>
+        <input type="number" id="num1" required><br>
+        <label for="">Enter Second Number: </label><br>
+        <input type="number" id="num2" required><br>
+        <label for="">Select Operation</label><br>
+        <select name="" id="operation">
+            <option value="+">Additon</option>
+            <option value="-">Subtraction</option>
+            <option value="*">Multiplication</option>
+            <option value="/">Divide</option>
+        </select><br>
+        <button type="button" onclick="calculate()">Calculate</button>
+    </form>
+    <div id="result">Result: </div>
+    <script src="script.js"></script>
+</body>
+</html>
